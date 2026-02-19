@@ -1,8 +1,8 @@
 // assets
-import { IconHierarchy, IconBuildingStore, IconKey, IconTool, IconLock } from '@tabler/icons'
+import { IconHierarchy, IconBuildingStore, IconKey, IconTool, IconLock, IconChartInfographic } from '@tabler/icons'
 
 // constant
-const icons = { IconHierarchy, IconBuildingStore, IconKey, IconTool, IconLock }
+const icons = { IconHierarchy, IconBuildingStore, IconKey, IconTool, IconLock, IconChartInfographic }
 
 // ==============================|| DASHBOARD MENU ITEMS ||============================== //
 
@@ -41,6 +41,15 @@ const dashboard = {
             type: 'item',
             url: '/credentials',
             icon: icons.IconLock,
+            breadcrumbs: true
+        },
+
+        {
+            id: 'treasuryDashboard',
+            title: 'Treasury Dashboard',
+            type: 'item',
+            url: '/treasury-dashboard',
+            icon: icons.IconChartInfographic,
             breadcrumbs: true
         },
         {
