@@ -19,6 +19,9 @@ const Tools = Loadable(lazy(() => import('views/tools')))
 // credentials routing
 const Credentials = Loadable(lazy(() => import('views/credentials')))
 
+// treasury dashboard routing
+const TreasuryDashboard = Loadable(lazy(() => import('views/treasury-dashboard')))
+
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
@@ -48,6 +51,10 @@ const MainRoutes = {
         {
             path: '/credentials',
             element: <Credentials />
+        },
+        {
+            path: '/treasury-dashboard',
+            element: <TreasuryDashboard />
         }
     ]
 }
